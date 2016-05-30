@@ -50,7 +50,7 @@ namespace Demo.Test
             catch (InsufficientFundsException expected)
             {
             }
-
+            
             Assert.AreEqual(200m, source.Balance);
             Assert.AreEqual(150m, destination.Balance);
         }
