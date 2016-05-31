@@ -39,20 +39,20 @@ namespace Demo.Test
             Assert.Throws<InsufficientFundsException>(()=> source.TransferFunds(destination, 300m));
         }
 
-        [Test]
-        [Ignore("Decide how to implement transaction management")]
-        public void TransferWithInsufficientFundsAtomicity()
-        {
-            try
-            {
-                source.TransferFunds(destination, 300m);
-            }
-            catch (InsufficientFundsException expected)
-            {
-            }
+        //[Test]
+        //[Ignore("Decide how to implement transaction management")]
+        //public void TransferWithInsufficientFundsAtomicity()
+        //{
+        //    try
+        //    {
+        //        source.TransferFunds(destination, 300m);
+        //    }
+        //    catch (InsufficientFundsException expected)
+        //    {
+        //    }
             
-            Assert.AreEqual(200m, source.Balance);
-            Assert.AreEqual(150m, destination.Balance);
-        }
+        //    Assert.AreEqual(200m, source.Balance);
+        //    Assert.AreEqual(150m, destination.Balance);
+        //}
     }
 }
