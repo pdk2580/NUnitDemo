@@ -36,7 +36,7 @@ namespace Demo.Test
         [Test]
         public void TransferWithInsufficientFunds()
         {
-            source.TransferFunds(destination, 400m);
+            source.TransferFunds(destination, 500m);
             //Assert.Throws<InsufficientFundsException>(()=> source.TransferFunds(destination, 300m));
         }
 
